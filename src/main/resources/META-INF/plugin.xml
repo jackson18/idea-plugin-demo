@@ -25,8 +25,15 @@
 
     </extensions>
     <actions>
+        <!-- 大小写转换 -->
         <action id="ToggleCaseAction" class="com.example.ideaplugindemo.action.ToggleCaseAction" text="ToggleCase"
                 description="ToggleCase">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+
+        <!--追加字符串-->
+        <action id="AppendStr" class="com.example.ideaplugindemo.action.AppendStr" text="append string"
+                description="append string">
             <add-to-group group-id="GenerateGroup" anchor="last"/>
         </action>
     </actions>
